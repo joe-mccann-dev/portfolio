@@ -18,6 +18,8 @@ menu__settings:
       url: '/about/'
     - title: 'Contact'
       url: '/contact/'
+    - title: 'Resume'
+      url: '/resume/'
 
 #-------------------------------
 # Hero Settings
@@ -29,7 +31,7 @@ hero:
 #-------------------------------
 # Portfolio Settings
 portfolio:
-  portfolio__title: Projects
+  portfolio__title: Portfolio
   portfolio__gallery:
     - image: /images/chess.png
       title: Ruby Command Line Chess
