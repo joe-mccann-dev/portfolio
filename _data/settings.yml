@@ -1,0 +1,86 @@
+#-------------------------------
+# Site Settings
+title: joe-mccann.dev
+logo: # You can add own logo. For example '/images/logo.png'.
+author: Joe McCann
+description: Full Stack Web Developer based in the Boston area.
+
+
+#-------------------------------
+# Menu Settings
+menu__settings:
+  menu__items:
+    - title: 'Home'
+      url: '/'
+    - title: 'Blog'
+      url: '/blog/'
+    - title: 'About'
+      url: '/about/'
+    - title: 'Contact'
+      url: '/contact/'
+
+#-------------------------------
+# Hero Settings
+hero:
+  hero__title: Hi there, my name's Joe. I'm a Full Stack Developer based in the Boston area.
+  hero__description: I'm a self-taught software enthusiast. About two years ago, I discovered a love of programming. I've since been building rewarding projects and git committing frequently. When I'm not debugging or writing specs, I enjoy playing guitar and bass, discovering new music, and running or hiking the trails of New England. Please feel free to check out the projects in my portfolio.
+
+
+#-------------------------------
+# Portfolio Settings
+portfolio:
+  portfolio__title: Projects
+  portfolio__gallery:
+    - image: /images/chess.png
+      title: Ruby Command Line Chess
+      description: <a href="https://github.com/joe-mccann-dev/chess">Repo</a> | A fully playable command line chess game written in Ruby | <a href="https://replit.com/@JoeMcCannDev/chess">Demo</a>
+
+    - image: /images/raven-reservations.png
+      title: Raven Reservations
+      description: <a href="https://github.com/joe-mccann-dev/odin-flight-booker">Repo</a> | A flight-booker app written in Ruby on Rails | <a href="https://raven-reservations.com/">Demo</a>
+
+    - image: /images/private-events.png
+      title: Private Events
+      description: <a href="https://github.com/joe-mccann-dev/private-events">Repo</a> | A CRUD Rails app where users can create, attend, and invite others to events. Includes live chat functionality. | <a href="https://private-events.net/">Demo</a>
+
+#-------------------------------
+# Subscribe Settings
+# mailchimp:
+#   mailchimp__title: Get updates and digital art inspiration # Add your Title
+#   mailchimp__identifier: # Add your MailChimp form identifier. For example - blogenjoyfreedom.us16.list-manage.com/subscribe/post?u=cd56155d76ddeeb4c0bc4d080&amp;id=7a526cd13e
+#   mailchimp__button__text: Subscribe # Add your button text.
+#   mailchimp__bg__color: "#f2eef8" # To change the color of the figure, add a hexadecimal color code (HEX). For example - "#f2eef8" (You can generate any color here - https://htmlcolorcodes.com/).
+
+
+#-------------------------------
+# Footer Settings
+social:
+- {icon: "ion-logo-twitter", color: "#55acee", label: Twitter, link: "https://twitter.com/joe_mccann_dev"}
+- {icon: "ion-logo-linkedin", color: "#0A66C2", label: LinkedIn, link: "https://www.linkedin.com/in/joe-mccann-dev/"}
+- {icon: "ion-logo-github", color: "#3b3f44", label: GitHub, link: "https://github.com/joe-mccann-dev"}
+
+
+
+# Example of adding a new link to the footer section - {icon: "ion-logo-github", color: "#24292e, label: Github, link: "https://github.com"}
+# Other icons can be found at https://ionicons.com/v4/
+
+
+#-------------------------------
+# Contact Settings
+contact:
+  email: joe.mccann@mailbox.org # Add your email for contact form
+  description: I'd love to hear from you! <a href="mailto:joe.mccann@mailbox.org">Send me an email</a> or fill out the form below.
+
+# NOTE
+# Clancy comes with a built-in contact form, that you can use with Formspree service to handle up to 50 submissions per month for free. You could also easily switch to another contact form service if you want.
+
+
+#-------------------------------
+# Comment Section (Disqus)
+
+disqus-identifier: anvodstudio-demo # add your shortname for Disqus Comment. For example anvodstudio-demo
+
+
+#-------------------------------
+# Google Analytics
+google-analytics: # Add your identifier. For example UA-99631805-1.
