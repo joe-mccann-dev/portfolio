@@ -4,54 +4,30 @@ title: About
 permalink: /about/
 image: /images/crater-lake.jpg
 ---
+()*Knife Edge trail of Mount Katahdin, Maine.*
 
-Leverage agile frameworks to provide a robust [Hugo Sousa](https://unsplash.com/photos/BghGseQbAkA) synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.
+>An investment in knowledge always pays the best interest. ― Andrew Hunt
 
-Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. User generated content in real-time will have multiple touchpoints for offshoring.
+### Quick Bio
 
-> The longer I live, the more I realize that I am never wrong about anything, and that all the pains I have so humbly taken to verify my notions have only wasted my time!
+I grew up as a child of the 90s in the small city of Portland, Maine. It was there I developed an intense curiosity about the world and a love of the great outdoors. I remember being around seven years old, watching my uncle type some text into the Windows Command Prompt and being completely mesmerized. That of course was followed by the screeching of a dial-up modem.
 
-Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information highway will close the loop on focusing solely on the bottom line.
+From that early age, computing has always fascinated me. While I decided to study English in college, a love of computing has always been there, I just never quite knew how to express it.
 
-Podcasting operational change management inside of workflows to establish a framework. Taking seamless key performance indicators offline to maximise the long tail. Keeping your eye on the ball while performing a deep dive on the start-up mentality to derive convergence on cross-platform integration.
+In late 2019, I discovered a love of programming. The idea that I could create almost anything I could imagine given the proper tools and knowledge was incredibly compelling. I have since taught myself programming through the vehicle of web development using a free and open source curriculum called [The Odin Project](https://theodinproject.com).
 
-![Workflow]({{site.baseurl}}/images/03.jpg)
-*Photo by [Hugo Sousa](https://unsplash.com/photos/BghGseQbAkA) on Unsplash*
+The greatest value The Odin Project has given me is the ability to problem solve on my own--to break down problems into small chunks--but also to know when to ask for help. That, along with an increased capacity for patience, is what gives me the space to grow as a developer. 
 
-Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.
+### Interests
 
-Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. User generated content in real-time will have multiple touchpoints for offshoring.
+I love music just as much as software development. I have played guitar since the 6th grade and recently taught myself bass. My other interests are running, hiking, and photography.
 
-### Podcasting
+#### Technology of Choice
 
-Phosfluorescently engage worldwide methodologies with web-enabled technology. Interactively coordinate proactive e-commerce via process-centric "outside the box" thinking. Completely pursue scalable [Hugo Sousa](https://unsplash.com/photos/BghGseQbAkA) customer service through sustainable potentialities.
+- Ubuntu Budgie
+- Ruby on Rails
+- Git
+- RSpec
 
-Collaboratively administrate turnkey channels whereas virtual e-tailers. Objectively seize scalable metrics whereas proactive e-services. Seamlessly empower fully researched growth strategies and interoperable internal or "organic" sources.
-
-<div class="gallery-box">
-  <div class="gallery">
-    <img src="/images/09.jpg">
-    <img src="/images/06.jpg">
-    <img src="/images/03.jpg">
-    <img src="/images/08.jpg">
-    <img src="/images/05.jpg">
-    <img src="/images/11.jpg">
-  </div>
-  <em>Gallery / <a href="https://unsplash.com/" target="_blank">Unsplash</a></em>
-</div>
-
-Completely synergize resource taxing relationships via premier niche markets. Professionally cultivate one-to-one customer service with robust ideas. Dynamically innovate resource-leveling customer service for state of the art customer service.
-
-Objectively innovate empowered manufactured products whereas parallel platforms. Holisticly predominate extensible testing procedures for reliable supply chains. Dramatically engage top-line web services vis-a-vis cutting-edge deliverables.
-
-### Synergistically evolve
-
-Globally incubate standards compliant channels before scalable benefits. Quickly disseminate superior deliverables whereas web-enabled applications. Quickly drive clicks-and-mortar catalysts for change before vertical architectures.
-
-<p><iframe src="https://player.vimeo.com/video/147264547?title=0&byline=0" width="640" height="360" frameborder="0" allowfullscreen></iframe></p>
-
-Credibly reintermediate backend ideas for cross-platform models. Continually reintermediate integrated processes through technically sound intellectual capital. Holistically foster superior methodologies without market-driven best practices.
-
-Distinctively exploit optimal alignments for intuitive bandwidth. Quickly coordinate e-business applications through revolutionary catalysts for change. Seamlessly underwhelm optimal testing procedures whereas bricks-and-clicks processes.
-
-***
+![Picture]({{site.baseurl}}/images/knife-edge.jpg)
+*Knife Edge trail of Mount Katahdin, Maine.*
