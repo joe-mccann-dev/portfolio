@@ -4,6 +4,7 @@ title:  Extracting Logic from a Rails View
 date:   2021-12-22 19:20:16 -0500
 image:  '/images/unsplash-rails-aerial.jpg'
 tags:   [rails, views]
+comments: true
 ---
 
 ## Introduction
