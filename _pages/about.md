@@ -5,7 +5,8 @@ permalink: /about/
 image: /images/crater-lake-scaled.jpg
 ---
 
->An investment in knowledge always pays the best interest. ― Andrew Hunt
+> An investment in knowledge always pays the best interest.
+> ― <cite>Andrew Hunt</cite>
 
 ### Quick Bio
 
