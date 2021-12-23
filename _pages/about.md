@@ -2,7 +2,7 @@
 layout: page
 title: About
 permalink: /about/
-image: /images/crater-lake.jpg
+image: /images/crater-lake-scaled.jpg
 ---
 
 >An investment in knowledge always pays the best interest. ― Andrew Hunt
@@ -28,5 +28,5 @@ I love music just as much as software development. I have played guitar since th
 - Git
 - RSpec
 
-![Picture]({{site.baseurl}}/images/knife-edge.jpg)
+![Picture]({{site.baseurl}}/images/knife-edge-scaled.jpg)
 *Knife Edge trail of Mount Katahdin, Maine.*
