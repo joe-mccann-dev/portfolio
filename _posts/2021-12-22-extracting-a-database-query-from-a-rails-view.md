@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Extracting Logic from a Rails View
+title:  Extracting a Database Query from a Rails View
 date:   2021-12-22 19:20:16 -0500
 image:  '/images/unsplash-rails-aerial.jpg'
 tags:   [rails, views]
@@ -26,7 +26,7 @@ Therefore, when rendering the notifications collection, we can find the soon-to-
               friendship_path(friendship),
               method: :put,
               params: {  notification: { time_sent: notification.time_sent },
-                         friendship: { status: 'accepted', sender_id: notification.sender.id } }
+                         friendship: { status: 'accepted' } }
                          %>
 {% endhighlight %}
 
@@ -130,7 +130,7 @@ Note the absence of the `friendship` local variable:
               friendship_path(@friendships[notification.sender.id]),
               method: :put,
               params: {  notification: { time_sent: notification.time_sent },
-                         friendship: { status: 'accepted', sender_id: notification.sender.id } }
+                         friendship: { status: 'accepted' } }
                          %>
 {% endhighlight %}
 
