@@ -22,12 +22,10 @@ Therefore, when rendering the notifications collection, we can find the soon-to-
 {% highlight erb %}
   <% friendship = Friendship.find_by(sender_id: notification.sender.id,
                                      receiver_id: notification.receiver.id) %>
-  <%= button_to "Accept",
+<%= button_to "Accept",
               friendship_path(friendship),
               method: :put,
-              params: {  notification: { time_sent: notification.time_sent },
-                         friendship: { status: 'accepted' } }
-                         %>
+              params: { friendship: { status: 'accepted' } } %>
 {% endhighlight %}
 
 We can eliminate the need for the local variable by creating a hash of all friend requests sent to the current user, mapped to the `sender_id`. The current user will always be the receiver in this situation and to find the Friendship request sent to the current user, we only need the `sender_id`. I thought it made sense to make this method an instance method on User but there are probably better ways to do this. Let me know in the comments! Here are the relevant models and associations.
@@ -125,13 +123,10 @@ Note the absence of the `friendship` local variable:
 ### Final "Accept" Button
 
 {% highlight erb %}
-  <%= button_to "Accept",
-              # accessing @friendships as declared in NotificationsController
+<%= button_to "Accept",
               friendship_path(@friendships[notification.sender.id]),
               method: :put,
-              params: {  notification: { time_sent: notification.time_sent },
-                         friendship: { status: 'accepted' } }
-                         %>
+              params: { friendship: { status: 'accepted' } }%>
 {% endhighlight %}
 
 ## Conclusion
