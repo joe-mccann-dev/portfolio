@@ -95,7 +95,7 @@ development:
 
 1. Follow the directions in the [Devise Wiki](https://github.com/heartcombo/devise/wiki/OmniAuth:-Overview). Some notes:
     - The examples use omniauth-facebook, but you can essentially replace any occurrence of 'facebook' with 'github'.
-    - scope entails the permissions you request of the authenticated user. "Access to email, profile info, etc." `scope: 'user,public_repo'` above grants access to basic profile information and all public repo information. GitHub provides these scopes in their [docs](https://docs.github.com/en/developers/apps/building-oauth-apps/scopes-for-oauth-apps)
+    - scope entails the permissions you request of the authenticated user. "Access to email, profile info, etc." `scope: 'user,public_repo'` below grants access to basic profile information and all public repo information. GitHub provides these scopes in their [docs](https://docs.github.com/en/developers/apps/building-oauth-apps/scopes-for-oauth-apps)
     - for the `config/initializers/devise.rb` part, your entry is accessing the environment variables set by Figaro:
     {% highlight ruby %}
       config.omniauth :github, ENV['GITHUB_ID'], ENV['GITHUB_SECRET'], scope: 'user,public_repo'
