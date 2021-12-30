@@ -9,15 +9,15 @@ comments: true
 
 ## Introduction
 
-"Who are you?", may be the line sung by Roger Daltrey of The Who in their 1978 hit _Who Are You_, but it is also the fundamental question that Authentication answers.
+"Who are you?" may be the line sung by Roger Daltrey of The Who in their 1978 hit _Who Are You_, but it is also the fundamental question that Authentication answers.
 
-Authentication is the process of determining whether or not a user is who they claim to be. You are likely familiar with the basic process. You sign up on a website with an email and password. The next time you login you will be prompted for your email and password. Basically, if both your email and password are correct, the application authenticates your identity.
+Authentication is the process of determining whether or not a user is who they claim to be. You are likely familiar with the basic process. You sign up on a website with an email and password. The next time you log in you will be prompted for your email and password. If both your email and password are correct, the application verifies or _authenticates_ your identity.
 
-But what if we've already gone through this process on another site? Wouldn't it be nice if we could somehow communicate with that site's authentication system and use it to authenticate the users on our own site? This is precisely what [OmniAuth](https://github.com/omniauth/omniauth) allows us to do, specifically through the use of community-built strategies, or code that allows one to authenticate to a given provider, e.g. Facebook or GitHub. You know those "Login with Facebook" buttons? Yep, that's what we're talking about here.
+But what if we've already gone through this process on another site? Wouldn't it be nice if we could somehow communicate with that site's authentication system and use it to authenticate the users on our site? This is precisely what [OmniAuth](https://github.com/omniauth/omniauth) allows us to do, specifically through the use of community-built strategies, or code that allows one to authenticate to a given provider, e.g. Facebook or GitHub. You know those "Login with Facebook" buttons? Yep, that's what we're talking about here.
 
-### What's the point of this post?
+### What does this post cover?
 
-In this post, I will go over the steps I took to authenticate to GitHub in a Rails development environment using the [omniauth-github](https://github.com/omniauth/omniauth-github) gem, "the official OmniAuth strategy for authenticating to GitHub", along with [Devise](https://github.com/heartcombo/devise), the [figaro](https://github.com/laserlemon/figaro) gem, and [ngrok](https://ngrok.com/), a nifty tool that exposes your local webhost to the internet. This guide will assume you already have Devise authentication setup for your app. See the link above for installation instructions.
+In this post, I will go over the steps I took to authenticate to GitHub in a Rails development environment using the [omniauth-github](https://github.com/omniauth/omniauth-github) gem, "the official OmniAuth strategy for authenticating to GitHub", along with [Devise](https://github.com/heartcombo/devise), the [figaro](https://github.com/laserlemon/figaro) gem, and [ngrok](https://ngrok.com/), a nifty tool that exposes your local WebHost to the internet. This guide will assume you already have Devise authentication setup for your app. See the link above for installation instructions.
 
 ## Outline
 
@@ -25,39 +25,39 @@ We will go over the following steps in more detail below.
 
 1. Installing the [figaro](https://github.com/laserlemon/figaro) gem to securely store our OAuth Client ID and Client Secret.
 2. [Registering a new OAuth](https://github.com/settings/developers) app with GitHub to use the GitHub API.
-3. Installing [ngrok](https://dashboard.ngrok.com/get-started/setup) to expose localhost to the internet and obtain a functional callback url.
-4. Configuring Omniauth Github and Devise.
+3. Installing [ngrok](https://dashboard.ngrok.com/get-started/setup) to expose localhost to the internet and obtain a functional callback URL.
+4. Configuring Omniauth GitHub and Devise.
 
-## Step 1 Installing Figaro
+## Step 1 | Installing Figaro
 
-The first step is fairly straightforward. We need a method for securely storing the keys we will obtain in Step 2. Figaro does this by creating a `config/application.yml` file and checks it out of version control. This way your secret key will never be pushed to GitHub and will stay on your local machine.
+The first step is fairly straightforward. We need a method for securely storing the keys we will obtain in Step 2. Figaro does this by creating a `config/application.yml` file and adding it to `.gitignore`. This way your secret key will never be pushed to GitHub and will stay on your local machine.
 
-To install figaro:
+To install Figaro:
 
-  1. Add it your your Gemfile: `gem 'figaro'`
+  1. Add it your Gemfile: `gem 'figaro'`
   2. Run `bundle install`
   3. Install figaro: `bundle exec figaro install`
 
 See the gem [documentation](https://github.com/laserlemon/figaro) for more details. This is all for now. We will return to the `config/application.yml` file generated by `bundle exec figaro install` after we register a new OAuth app on GitHub (Step 2).
 
-## Step 2 Registering an OAuth App with GitHub
+## Step 2 | Registering an OAuth App with GitHub
 
-In order to authenticate to GitHub, we must tell GitHub who we are and that we will be requesting information from its API. To do this, we must register our application as a new OAuth app. Navigate to [GitHub](https://github.com). Login and under your profile picture, click on Settings. Scroll down a bit and click on Developer Settings. Click on OAuth Apps, and finally "New OAuth App".
+To authenticate to GitHub, we must tell GitHub who we are and that we will be requesting information from its API. To do this, we must register our application as a new OAuth app. Navigate to [GitHub](https://github.com). Login and under your profile picture, click on Settings. Scroll down a bit and click on Developer Settings. Click on OAuth Apps, and finally "New OAuth App".
 
 1. Name your application
 2. Under "Homepage URL", enter `http://localhost:3000` as this is the homepage of your application in development.
 3. For "Authorization callback URL", we will need to pause and refer to Step 3.
 4. Return here after completing Step 3, Installing ngrok.
 
-## Step 3 Installing Ngrok
+## Step 3 | Installing Ngrok
 
 ### why install ngrok?
 
 - ngrok is a tool that exposes a local web server to the internet. The colloquial term for this is a _tunnel_.
-- ngrok allows us to use a callback url in development.
-- The callback url is essentially where a user is redirected after authenticating to the third party service, in this case the GitHub API via the omniauth-github library.
-- GitHub requires that this url be a public url, thus the need for a tool like ngrok.
-- After our application, located at `localhost:3000` sends a request for authentication to the GitHub API, GitHub "calls back" our publicly exposed webhost's url and our application now has an authenticated user.
+- ngrok allows us to use a callback URL in development.
+- The callback URL is essentially where a user is redirected after authenticating to the third party service, in this case, the GitHub API via the omniauth-github library.
+- GitHub requires that this URL be public, thus the need for a tool like ngrok.
+- After our application, located at `localhost:3000` sends a request for authentication to the GitHub API, GitHub "calls back" our publicly exposed WebHost's URL and our application now has an authenticated user.
 
 To install ngrok follow the [instructions](https://ngrok.com/download):
 
@@ -74,13 +74,13 @@ Note the forwarding URL.
 
 ### Returning to Step 2
 
-- Copy the second to last forwarding URL and paste it into the Github form under "Authorization callback URL".
-- Add `users/auth/github/callback` to the end of the url. This will ensure a proper redirect after authentication.
-- callback url: `http://0e30-73-119-170-171.ngrok.io/users/auth/github/callback`
+- Copy the second to last forwarding URL and paste it into the GitHub form under "Authorization callback URL".
+- Add `users/auth/github/callback` to the end of the URL. This will ensure a proper redirect after authentication.
+- callback URL: `http://0e30-73-119-170-171.ngrok.io/users/auth/github/callback`
 - Click on "Register Application".
 - Take note of your client id and client secret.
 
-### Saving client id and secret with figaro
+### Saving client id and secret with Figaro
 
 In your Rails application, navigate to `config/application.yml` and save your client id and secret:
 
@@ -90,11 +90,11 @@ development:
   GITHUB_SECRET: < client secret >
 {% endhighlight %}
 
-## Step 4 Configuring Omniauth Github and Devise
+## Step 4 | Configuring Omniauth GitHub and Devise
 
 1. Follow the directions in the [Devise Wiki](https://github.com/heartcombo/devise/wiki/OmniAuth:-Overview). Some notes:
-    - The examples use omniauth-facebook, but you can essentially replace any occurence of 'facebook' with 'github'.
-    - scope entails the permissions you request of the authenticated user. "Access to email, profile info, etc." `scope: 'user,public_repo'` above grants access to basic profile information and all public repo information. Github provides these scopes in their [docs](https://docs.github.com/en/developers/apps/building-oauth-apps/scopes-for-oauth-apps)
+    - The examples use omniauth-facebook, but you can essentially replace any occurrence of 'facebook' with 'github'.
+    - scope entails the permissions you request of the authenticated user. "Access to email, profile info, etc." `scope: 'user,public_repo'` above grants access to basic profile information and all public repo information. GitHub provides these scopes in their [docs](https://docs.github.com/en/developers/apps/building-oauth-apps/scopes-for-oauth-apps)
     - for the `config/initializers/devise.rb` part, your entry is accessing the environment variables set by Figaro:
     {% highlight ruby %}
       config.omniauth :github, ENV['GITHUB_ID'], ENV['GITHUB_SECRET'], scope: 'user,public_repo'
@@ -102,12 +102,19 @@ development:
 
 ## Final Steps
 
-You should now be able to authenticate a GitHub user in your application in Development. Try it out with your own GitHub account!
+- Navigate to your ngrok forwarding URL (Ctrl+click from terminal), and click the "Sign in with GitHub" link you made in Step 4.
+- It may be necessary to add your ngrok domain to your list of allowed hosts in `config/environments/development`:
+{% highlight ruby %}
+  config.hosts << "0e30-73-119-170-171.ngrok.io"
+{% endhighlight %}
+- This will need to be changed if you close the terminal session that holds your ngrok session.
+- You should now be able to authenticate a GitHub user in your application in Development. Try it out with your own GitHub account!
 
 ### To move this setup to Production
 
 1. Return to Step 2:
-     - On GitHub application page, update your "Homepage URL" to `< your app's production domain name >`
+     - On GitHub application page, update your "Homepage URL" to
+     `< your app's production domain name >`
      - Update "Authorization callback URL" to `< your app's production domain name >/users/auth/github/callback`.
 2. Update your `config/application.yml` file to include a production environment.
 3. Set Heroku config variables so Heroku can access your application keys
