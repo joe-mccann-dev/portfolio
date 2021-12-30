@@ -40,6 +40,9 @@ layout: default
   {%endif %}
 
   <article class="post">
+    {%if page.read_time %}
+    <p><strong>{{ page.read_time }} minute read</strong></p>
+    {% endif %}
 
     <div class="post__content">
       {{ content }}

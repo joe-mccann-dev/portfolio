@@ -4,6 +4,7 @@ title:  Setting Up OmniAuth Authentication in Development
 date:   2021-12-29 16:39:25 -0500
 image:  '/images/authentication.jpg'
 tags:   [rails, omniauth, authentication, ngrok]
+read_time: 5
 comments: true
 ---
 
@@ -121,6 +122,10 @@ development:
      - `heroku config:set GITHUB_ID=github_id_key_here`
      - `heroku config:set GITHUB_SECRET=github_secret_key_here`
 4. Deploy to Heroku
+
+#### Reflection
+
+I was quite happy when I saw the "Successfully authenticated from Github account." flash message. Getting this to work was an exercise in patience and reading documentation slowly and carefully. Authentication is a deep topic and I feel I have only scratched the surface. I hope this post was a helpful guide on how to setup OmniAuth in a development environment. Before we walk, we must crawl. Before we deploy to production, we must struggle in development.
 
 Photo by <a href="https://unsplash.com/@brett_jordan?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Brett Jordan</a> on <a href="https://unsplash.com/s/photos/authenticity?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
   
