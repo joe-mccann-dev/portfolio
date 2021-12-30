@@ -110,7 +110,7 @@ You should now be able to authenticate a GitHub user in your application in Deve
      - On GitHub application page, update your "Homepage URL" to `< your app's production domain name >`
      - Update "Authorization callback URL" to `< your app's production domain name >/users/auth/github/callback`.
 2. Update your `config/application.yml` file to include a production environment.
-3. Set Heroku config variables to that Heroku can access your application keys
+3. Set Heroku config variables so Heroku can access your application keys
      - `heroku config:set GITHUB_ID=github_id_key_here`
      - `heroku config:set GITHUB_SECRET=github_secret_key_here`
 4. Deploy to Heroku
