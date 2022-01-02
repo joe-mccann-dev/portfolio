@@ -74,6 +74,7 @@ development:
 Some notes:
     - The examples use omniauth-facebook, but you can essentially replace any occurrence of 'facebook' with 'github', or 'twitter', etc.
     - scope entails the permissions you request of the authenticated user. "Access to email, profile info, etc." `scope: 'user,public_repo'` below grants access to basic profile information and all public repo information. GitHub provides these scopes in their [docs](https://docs.github.com/en/developers/apps/building-oauth-apps/scopes-for-oauth-apps)
+    - Don't forget to add a "Sign in with GitHub" link.
     - for the `config/initializers/devise.rb` part, your entry is accessing the environment variables set by Figaro:
     {% highlight ruby %}
       config.omniauth :github, ENV['GITHUB_ID'], ENV['GITHUB_SECRET'], scope: 'user,public_repo'
@@ -106,7 +107,7 @@ The final command, `ngrok http 3000`, will bring up the ngrok UI:
 
 ## Final Steps
 
-- Navigate to your ngrok forwarding URL (Ctrl+click from terminal), and click the "Sign in with GitHub" link you made in Step 4.
+- Navigate to localhost:3000, or, if you're using ngrok, your ngrok forwarding URL (Ctrl+click from terminal), and click the "Sign in with GitHub" link you made earlier.
 - You should now be able to authenticate a GitHub user in your application in Development. Try it out with your own GitHub account!
 - If you're using ngrok for your Authorization callback URL, it may be necessary to add your ngrok domain to your list of allowed hosts in `config/environments/development`:
 {% highlight ruby %}
