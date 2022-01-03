@@ -3,7 +3,7 @@
 title: joe-mccann.dev
 logo: # You can add own logo. For example '/images/logo.png'.
 author: Joe McCann
-description: Full Stack Web Developer based in the Boston area.
+description: Full Stack Developer based in the Boston area.
 
 
 #-------------------------------
@@ -35,15 +35,15 @@ portfolio:
   portfolio__gallery:
     - image: /images/chess.png
       title: Ruby Command Line Chess
-      description: <a href="https://github.com/joe-mccann-dev/chess">Repo</a> | A fully playable command line chess game written in Ruby | <a href="https://replit.com/@JoeMcCannDev/chess">Demo</a>
+      description: <a href="https://replit.com/@JoeMcCannDev/chess">[Demo]</a> A fully playable command line chess game written in Ruby <a href="https://github.com/joe-mccann-dev/chess">[Repo]</a>
 
     - image: /images/raven-reservations.png
       title: Raven Reservations
-      description: <a href="https://github.com/joe-mccann-dev/odin-flight-booker">Repo</a> | A flight-booker app written in Ruby on Rails | <a href="https://raven-reservations.com/">Demo</a>
+      description: <a href="https://raven-reservations.com/">[Demo]</a> A flight-booker app written in Ruby on Rails <a href="https://github.com/joe-mccann-dev/odin-flight-booker">[Repo]</a>
 
     - image: /images/private-events.png
       title: Private Events
-      description: <a href="https://github.com/joe-mccann-dev/private-events">Repo</a> | A CRUD Rails app where users can create, attend, and invite others to events. Includes live chat functionality. | <a href="https://private-events.net/">Demo</a>
+      description:  <a href="https://private-events.net/"> [Demo]</a> A CRUD Rails app where users can create, attend, and invite others to events. Includes live chat functionality. <a href="https://github.com/joe-mccann-dev/private-events"> [Repo] </a>
 
 #-------------------------------
 # Subscribe Settings
