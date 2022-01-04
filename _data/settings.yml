@@ -40,18 +40,33 @@ portfolio:
       repo: <a href="https://github.com/joe-mccann-dev/chess">github.com/joe-mccann-dev/chess</a>
       description:
         - Utilizes object oriented proramming principles.
-        - Includes RSpec test suite.
         - Follows all major chess rules including check, checkmate, stalemate, en passant, castling, etc.
         - Allows players to challenge another person or a simple AI.
-
-    - image: /images/raven-reservations.png
-      title: Raven Reservations
-      description: <a href="https://raven-reservations.com/">[Demo]</a> A flight-booker app written in Ruby on Rails <a href="https://github.com/joe-mccann-dev/odin-flight-booker">[Repo]</a>
+        - Includes RSpec test suite.
 
     - image: /images/private-events.png
       title: Private Events
-      description:  <a href="https://private-events.net/"> [Demo]</a> A CRUD Rails app where users can create, attend, and invite others to events. Includes live chat functionality. <a href="https://github.com/joe-mccann-dev/private-events"> [Repo] </a>
+      summary: Full Stack Ruby on Rails application. Create and attend events. Update attendance status and invite others to events.
+      demo: <a href="https://private-events.net/">private-events.net</a>
+      repo: <a href="https://github.com/joe-mccann-dev/private-events">github.com/joe-mccann-dev/private-events</a>
+      description:
+        - Harnesses the power of Rails Active Record associations.
+        - Sends multiple emails via Action Mailer and the SendGrid Heroku add-on.
+        - Users can invite one or more users to an event.
+        - Live chat functionality via Action Cable websockets. Chat in real-time on the "Members" page or an event page.
+        - Logged in users can see who's "online".
 
+    - image: /images/raven-reservations.png
+      title: Raven Reservations
+      summary: Ruby on Rails flight booker. Book a one-way flight to a selection of airports with up to four passengers per booking.
+      demo: <a href="https://raven-reservations.com/">raven-reservations.com</a>
+      repo: <a href="https://github.com/joe-mccann-dev/odin-flight-booker">github.com/joe-mccann-dev/odin-flight-booker</a>
+      description:
+        - Showcases advanced form functionality utilizing nested attributes. 
+        - Sends a confirmation email via Action Mailer and the SendGrid Heroku add-on.
+        - Allows users to search for their booking via email or confirmation number.
+        - Includes RSpec test suite.
+      
 #-------------------------------
 # Subscribe Settings
 # mailchimp:
