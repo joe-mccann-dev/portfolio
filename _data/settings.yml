@@ -32,10 +32,17 @@ hero:
 # Portfolio Settings
 portfolio:
   portfolio__title: Portfolio
-  portfolio__gallery:
+  portfolio__projects:
     - image: /images/chess.png
       title: Ruby Command Line Chess
-      description: <a href="https://replit.com/@JoeMcCannDev/chess">[Demo]</a> A fully playable command line chess game written in Ruby <a href="https://github.com/joe-mccann-dev/chess">[Repo]</a>
+      summary: A fully playable command line chess game written in Ruby.
+      demo: <a href="https://replit.com/@JoeMcCannDev/chess">Live Site</a>
+      repo: <a href="https://github.com/joe-mccann-dev/chess">GitHub Repo</a
+      description:
+        - Utilizes object oriented proramming principles.
+        - Includes RSpec test suite.
+        - Follows all major chess rules including check, checkmate, stalemate, en passant, castling, etc.
+        - Allows players to challenge another person or a simple AI.
 
     - image: /images/raven-reservations.png
       title: Raven Reservations
