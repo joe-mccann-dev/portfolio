@@ -40,7 +40,7 @@ portfolio:
       repo: <a href="https://github.com/joe-mccann-dev/chess">github.com/joe-mccann-dev/chess</a>
       description:
         - Follows all major chess rules including check, checkmate, stalemate, en passant, castling, etc.
-        - Utilizes object oriented proramming principles.
+        - Utilizes object oriented programming principles.
         - Allows players to challenge another person or a simple AI.
         - Includes RSpec test suite.
 
