@@ -15,15 +15,15 @@
     {% for project in site.data.settings.portfolio.portfolio__projects %}
     <div class="container portfolio__gallery">
       <div class="row">
-        <div class="col">
-          <p>{{project.title}}</p>
-          <p>{{project.summary}}</p>
+        <div class="col portfolio__item">
+          <h3>{{project.title}}</h3>
+          <img src="{{project.image}}" class="portfolio__item" alt="{{project.title}}" width="100%">
+          <p><em>{{project.summary}}</em></p>
           {% for bullet_point in project.description %}
           <ul>
             <li>{{bullet_point}}</li>
           </ul>
           {% endfor %}
-          <img src="{{project.image}}" class="portfolio__item" alt="{{project.title}}" width="100%">
         <div>  
       </div>
     </div>
