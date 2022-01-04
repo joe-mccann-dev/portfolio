@@ -18,12 +18,18 @@
         <div class="col portfolio__item">
           <h3>{{project.title}}</h3>
           <p><em>{{project.summary}}</em></p>
-          <img src="{{project.image}}" class="portfolio__item" alt="{{project.title}}" width="100%">
-          {% for bullet_point in project.description %}
-          <ul>
-            <li>{{bullet_point}}</li>
-          </ul>
-          {% endfor %}
+          <div class="image-bullets">
+            <div>
+              <img src="{{project.image}}" class="portfolio__item" alt="{{project.title}}" width="100%">
+            </div>
+            <div>
+              {% for bullet_point in project.description %}
+              <ul>
+                <li>{{bullet_point}}</li>
+              </ul>
+              {% endfor %}
+            </div>
+          </div>
         <div>  
       </div>
     </div>
