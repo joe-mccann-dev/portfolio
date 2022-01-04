@@ -104,6 +104,10 @@
   margin-bottom: ($base-spacing-unit * 2);
   border-radius: 16px;
   background: var(--background-alt-color);
+
+  p {
+    margin-bottom: 16px;
+  }
 }
 
 .portfolio__link {
@@ -180,4 +184,33 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.image-bullets .project-image, .image-bullets .project-bullets {
+  flex: 1 1 500px;
+}
+
+.project-bullets ul {
+  margin-top: 0;
+  margin-right: 0;
+  margin-bottom: 0;
+  margin-left: $base-spacing-unit;
+}
+
+.project-bullets ul li {
+  font-size: 1rem;
+  list-style: square;
+}
+
+.project-links { 
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-items: center;
+}
+
+.project-links a {
+  text-decoration: underline;
 }

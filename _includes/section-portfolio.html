@@ -18,11 +18,24 @@
         <div class="col portfolio__item">
           <h3>{{project.title}}</h3>
           <p><em>{{project.summary}}</em></p>
-          <div class="image-bullets">
+          <div class="project-links">
             <div>
-              <img src="{{project.image}}" class="portfolio__item" alt="{{project.title}}" width="100%">
+              <div><strong>demo</strong></div>
+              <div>{{project.demo}}</div>
             </div>
             <div>
+              <div><strong>code</strong></div>
+              <div>{{project.repo}}</div>
+            </div>
+          </div>
+          <div class="image-bullets">
+            <div class="project-image">
+              <a href="{{project.image}}">
+                <img src="{{project.image}}" class="portfolio__item" alt="{{project.title}}">
+              </a>
+            </div>
+
+            <div class="project-bullets">
               {% for bullet_point in project.description %}
               <ul>
                 <li>{{bullet_point}}</li>

@@ -35,9 +35,9 @@ portfolio:
   portfolio__projects:
     - image: /images/chess.png
       title: Ruby Chess
-      summary: A fully playable command line chess game written in Ruby.
-      demo: <a href="https://replit.com/@JoeMcCannDev/chess">Live Site</a>
-      repo: <a href="https://github.com/joe-mccann-dev/chess">GitHub Repo</a
+      summary: A fully playable command line chess game programmed in pure Ruby.
+      demo: <a href="https://replit.com/@joemccanndev/chess">replit.com/@joemccanndev/chess</a>
+      repo: <a href="https://github.com/joe-mccann-dev/chess">github.com/joe-mccann-dev/chess</a>
       description:
         - Utilizes object oriented proramming principles.
         - Includes RSpec test suite.
