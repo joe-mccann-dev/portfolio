@@ -17,8 +17,8 @@
       <div class="row">
         <div class="col portfolio__item">
           <h3>{{project.title}}</h3>
-          <img src="{{project.image}}" class="portfolio__item" alt="{{project.title}}" width="100%">
           <p><em>{{project.summary}}</em></p>
+          <img src="{{project.image}}" class="portfolio__item" alt="{{project.title}}" width="100%">
           {% for bullet_point in project.description %}
           <ul>
             <li>{{bullet_point}}</li>
