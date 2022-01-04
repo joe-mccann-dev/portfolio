@@ -39,22 +39,22 @@ portfolio:
       demo: <a href="https://replit.com/@joemccanndev/chess">replit.com/@joemccanndev/chess</a>
       repo: <a href="https://github.com/joe-mccann-dev/chess">github.com/joe-mccann-dev/chess</a>
       description:
-        - Utilizes object oriented proramming principles.
         - Follows all major chess rules including check, checkmate, stalemate, en passant, castling, etc.
+        - Utilizes object oriented proramming principles.
         - Allows players to challenge another person or a simple AI.
         - Includes RSpec test suite.
 
     - image: /images/private-events.png
       title: Private Events
-      summary: Full Stack Ruby on Rails application. Create and attend events. Update attendance status and invite others to events.
+      summary: Full Stack Ruby on Rails application. Create and attend events. RSVP and invite others to events.
       demo: <a href="https://private-events.net/">private-events.net</a>
       repo: <a href="https://github.com/joe-mccann-dev/private-events">github.com/joe-mccann-dev/private-events</a>
       description:
-        - Harnesses the power of Rails Active Record associations.
+        - Harnesses the power of Rails' Active Record associations.
         - Sends multiple emails via Action Mailer and the SendGrid Heroku add-on.
-        - Users can invite one or more users to an event.
-        - Live chat functionality via Action Cable websockets. Chat in real-time on the "Members" page or an event page.
-        - Logged in users can see who's "online".
+        - Users can select one or multiple users to invite to an event.
+        - Features live chat via Action Cable websockets. Chat in real-time on the "Members" page or an event page.
+        - Includes RSpec test suite.
 
     - image: /images/raven-reservations.png
       title: Raven Reservations
