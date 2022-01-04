@@ -25,7 +25,7 @@ menu__settings:
 # Hero Settings
 hero:
   hero__title: Hi there, my name's Joe. I'm a Full Stack Developer based in New England.
-  hero__description: I'm a self-taught programmer and software enthusiast. About two years ago, I discovered a love of programming. I've since been building rewarding projects and git committing frequently. When I'm not debugging or writing specs, I enjoy playing guitar and bass, discovering new music, and running or hiking the trails of New England. Please feel free to check out the projects in my portfolio.
+  hero__description: I'm a self-taught programmer and software enthusiast. About two years ago, I discovered a love of programming. I've since been building rewarding projects and git committing frequently. When I'm not debugging or writing specs, I enjoy playing guitar and bass, discovering new music, and running or hiking the trails of New England. Please feel free to check out the projects in my <a href="#portfolio">portfolio</a>.
 
 
 #-------------------------------
