@@ -43,6 +43,18 @@ portfolio:
         - Utilizes object oriented programming principles.
         - Allows players to challenge another person or a simple AI.
         - Includes RSpec test suite.
+    
+    - image: /images/gembook.png
+      title: Gembook (in progress--styling)
+      summary: A social media site written in Ruby on Rails.
+      demo: <a href="https://gembook.net">gembook.net</a>
+      repo: <a href="https://github.com/joe-mccann-dev/gembook">github.com/joe-mccann-dev/gembook</a>
+      description:
+        - Authenticate via Devise or OAuth authentication.
+        - Utilizes polymorphic associations (likeable and commentable).
+        - Search for other users by name.
+        - Friend/Unfriend other users. Post text content, images, or both. Comment on posts or other comments. Create a profile. Like posts and comments.
+        - Includes RSpec test suite.
 
     - image: /images/private-events.png
       title: Private Events
