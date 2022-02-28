@@ -45,7 +45,7 @@ portfolio:
         - Includes RSpec test suite.
     
     - image: /images/gembook.png
-      title: Gembook (in progress--styling)
+      title: Gembook
       summary: A social media site written in Ruby on Rails.
       demo: <a href="https://gembook.net">gembook.net</a>
       repo: <a href="https://github.com/joe-mccann-dev/gembook">github.com/joe-mccann-dev/gembook</a>
