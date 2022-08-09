@@ -47,7 +47,7 @@ portfolio:
     - image: /images/gembook.png
       title: Gembook
       summary: A social media site written in Ruby on Rails.
-      demo: <a href="https://gembook.net">gembook.net</a>
+      demo: <a href="https://fathomless-citadel-41420.herokuapp.com/">fathomless-citadel-41420.herokuapp.com</a>
       repo: <a href="https://github.com/joe-mccann-dev/gembook">github.com/joe-mccann-dev/gembook</a>
       description:
         - Authenticate via Devise or OAuth authentication.
@@ -59,7 +59,7 @@ portfolio:
     - image: /images/private-events.png
       title: Private Events
       summary: Full Stack Ruby on Rails application. Create and attend events. RSVP and invite others to events.
-      demo: <a href="https://private-events.net/">private-events.net</a>
+      demo: <a href="https://fast-citadel-83141.herokuapp.com/">fast-citadel-83141.herokuapp.com</a>
       repo: <a href="https://github.com/joe-mccann-dev/private-events">github.com/joe-mccann-dev/private-events</a>
       description:
         - Harnesses the power of Rails' Active Record associations.
@@ -71,7 +71,7 @@ portfolio:
     - image: /images/raven-reservations.png
       title: Raven Reservations
       summary: Ruby on Rails flight booker. Book a one-way flight to a selection of airports with up to four passengers per booking.
-      demo: <a href="https://raven-reservations.com/">raven-reservations.com</a>
+      demo: <a href="https://raven-reservations.herokuapp.com/">raven-reservations.herokuapp.com</a>
       repo: <a href="https://github.com/joe-mccann-dev/odin-flight-booker">github.com/joe-mccann-dev/odin-flight-booker</a>
       description:
         - Showcases advanced form functionality utilizing nested attributes. 
