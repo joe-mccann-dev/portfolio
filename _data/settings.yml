@@ -76,7 +76,6 @@ portfolio:
         - Harnesses the power of Rails' Active Record associations.
         - Sends multiple emails via Action Mailer and the SendGrid Heroku add-on.
         - Users can select one or multiple users to invite to an event.
-        - Features live chat via Action Cable websockets. Chat in real-time on the "Members" page or an event page.
         - Includes RSpec test suite.
       
 #-------------------------------
