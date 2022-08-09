@@ -56,6 +56,17 @@ portfolio:
         - Friend/Unfriend other users. Post text content, images, or both. Comment on posts or other comments. Create a profile. Like posts and comments.
         - Includes RSpec test suite.
 
+    - image: /images/raven-reservations.png
+      title: Raven Reservations
+      summary: Ruby on Rails flight booker. Book a one-way flight to a selection of airports with up to four passengers per booking.
+      demo: <a href="https://raven-reservations.herokuapp.com/">raven-reservations.herokuapp.com</a>
+      repo: <a href="https://github.com/joe-mccann-dev/odin-flight-booker">github.com/joe-mccann-dev/odin-flight-booker</a>
+      description:
+        - Showcases advanced form functionality utilizing nested attributes. 
+        - Sends a confirmation email via Action Mailer and the SendGrid Heroku add-on.
+        - Allows users to search for their booking via email or confirmation number.
+        - Includes RSpec test suite.
+
     - image: /images/private-events.png
       title: Private Events
       summary: Full Stack Ruby on Rails application. Create and attend events. RSVP and invite others to events.
@@ -66,17 +77,6 @@ portfolio:
         - Sends multiple emails via Action Mailer and the SendGrid Heroku add-on.
         - Users can select one or multiple users to invite to an event.
         - Features live chat via Action Cable websockets. Chat in real-time on the "Members" page or an event page.
-        - Includes RSpec test suite.
-
-    - image: /images/raven-reservations.png
-      title: Raven Reservations
-      summary: Ruby on Rails flight booker. Book a one-way flight to a selection of airports with up to four passengers per booking.
-      demo: <a href="https://raven-reservations.herokuapp.com/">raven-reservations.herokuapp.com</a>
-      repo: <a href="https://github.com/joe-mccann-dev/odin-flight-booker">github.com/joe-mccann-dev/odin-flight-booker</a>
-      description:
-        - Showcases advanced form functionality utilizing nested attributes. 
-        - Sends a confirmation email via Action Mailer and the SendGrid Heroku add-on.
-        - Allows users to search for their booking via email or confirmation number.
         - Includes RSpec test suite.
       
 #-------------------------------
