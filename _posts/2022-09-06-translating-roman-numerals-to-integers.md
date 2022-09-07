@@ -167,6 +167,6 @@ roman_to_s("MCMXCIV")
 
 ## Conclusion
 
-I do not think this is the fastest solution on leetcode, but I personally find it quite readable. This is a testament to the power of the hash data structure, which made it straighforward to map a numeral to its integer value. 
+I do not think this is the fastest solution on leetcode, but I personally find it readable. This is a testament to the power of the hash data structure, which made it straighforward to map a numeral to its integer value. 
 
 How did you solve this problem or what could I do differently? Let me know in the comments below!
