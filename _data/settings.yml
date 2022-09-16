@@ -33,50 +33,33 @@ hero:
 portfolio:
   portfolio__title: Portfolio
   portfolio__projects:
-    - image: /images/chess.png
-      title: Ruby Chess
-      summary: A fully playable command line chess game programmed in pure Ruby.
-      demo: <a href="https://replit.com/@joemccanndev/chess">replit.com/@joemccanndev/chess</a>
-      repo: <a href="https://github.com/joe-mccann-dev/chess">github.com/joe-mccann-dev/chess</a>
-      description:
-        - Follows all major chess rules including check, checkmate, stalemate, en passant, castling, etc.
-        - Utilizes object oriented programming principles.
-        - Allows players to challenge another person or a simple AI.
-        - Includes RSpec test suite.
-    
     - image: /images/gembook.png
       title: Gembook
-      summary: A social media site written in Ruby on Rails.
-      demo: <a href="https://fathomless-citadel-41420.herokuapp.com/">fathomless-citadel-41420.herokuapp.com</a>
-      repo: <a href="https://github.com/joe-mccann-dev/gembook">github.com/joe-mccann-dev/gembook</a>
+      summary: A social media capstone project completed as part of The Odin Project’s Ruby on Rails curriculum.
+      demo: <a href="https://fathomless-citadel-41420.herokuapp.com/">Gembook</a>
+      repo: <a href="https://github.com/joe-mccann-dev/gembook">View on GitHub</a>
       description:
-        - Authenticate via Devise or OAuth authentication.
-        - Utilizes polymorphic associations (likeable and commentable).
-        - Search for other users by name.
-        - Friend/Unfriend other users. Post text content, images, or both. Comment on posts or other comments. Create a profile. Like posts and comments.
-        - Includes RSpec test suite.
-
-    - image: /images/raven-reservations.png
-      title: Raven Reservations
-      summary: Ruby on Rails flight booker. Book a one-way flight to a selection of airports with up to four passengers per booking.
-      demo: <a href="https://raven-reservations.herokuapp.com/">raven-reservations.herokuapp.com</a>
-      repo: <a href="https://github.com/joe-mccann-dev/odin-flight-booker">github.com/joe-mccann-dev/odin-flight-booker</a>
+        - Programmed all core functionality of a sensible social media site, including friendships, profiles, posts, comments, nested comments, and likes.
+        - Streamlined authentication process-- clients can log in with either email or via OAuth.
+        - Tested application thoroughly with the testing tool RSpec, including system and unit specs.
+    
+    - image: /images/chess.png
+      title: Ruby Chess
+      summary: Conceptualized a fully functional and featured command line chess game using object-oriented concepts such as inheritance and composition.
+      demo: <a href="https://replit.com/@JoeMcCannDev/chess#README.md">Ruby Chess</a>
+      repo: <a href="https://github.com/joe-mccann-dev/chess">View on GitHub</a>
       description:
-        - Showcases advanced form functionality utilizing nested attributes. 
-        - Sends a confirmation email via Action Mailer and the SendGrid Heroku add-on.
-        - Allows users to search for their booking via email or confirmation number.
-        - Includes RSpec test suite.
-
-    - image: /images/private-events.png
-      title: Private Events
-      summary: Full Stack Ruby on Rails application. Create and attend events. RSVP and invite others to events.
-      demo: <a href="https://fast-citadel-83141.herokuapp.com/">fast-citadel-83141.herokuapp.com</a>
-      repo: <a href="https://github.com/joe-mccann-dev/private-events">github.com/joe-mccann-dev/private-events</a>
+        - Debugged and troubleshot issues with pry-byebug.
+        - Arranged for serialization of game objects, allowing for easy in-game saving and loading.
+      
+    - image: /images/movie-buddy-screenshot.png
+      title: Movie Buddy
+      summary: Sinatra web app that submits requests to the OMDb API and returns movies based on title and release year parameters.
+      demo: <a href="https://movie-buddy.onrender.com/">Movie Buddy</a>
+      repo: <a href="https://github.com/joe-mccann-dev/MovieBuddy">View on GitHub</a>
       description:
-        - Harnesses the power of Rails' Active Record associations.
-        - Sends multiple emails via Action Mailer and the SendGrid Heroku add-on.
-        - Users can select one or multiple users to invite to an event.
-        - Includes RSpec test suite.
+        - Designed Ruby objects to interact with a public database.
+        - Arranged for parallel API requests and caching with the Typhoeus gem to improve performance.
       
 #-------------------------------
 # Subscribe Settings
