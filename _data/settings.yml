@@ -36,12 +36,13 @@ portfolio:
     - image: /images/gembook.png
       title: Gembook
       summary: A social media capstone project completed as part of The Odin Project’s Ruby on Rails curriculum.
-      demo: <a href="https://fathomless-citadel-41420.herokuapp.com/">Gembook</a>
+      demo: <a href="https://gembook.onrender.com">Gembook</a>
       repo: <a href="https://github.com/joe-mccann-dev/gembook">View on GitHub</a>
       description:
         - Programmed all core functionality of a sensible social media site, including friendships, profiles, posts, comments, nested comments, and likes.
         - Streamlined authentication process-- clients can log in with either email or via OAuth.
         - Tested application thoroughly with the testing tool RSpec, including system and unit specs.
+        - File storage via AWS S3
     
     - image: /images/chess.png
       title: Ruby Chess
